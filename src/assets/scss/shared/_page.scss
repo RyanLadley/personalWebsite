@@ -1,0 +1,56 @@
+
+.section{
+	display:inline-block;
+	width: 100%;
+
+	.block-container{
+		margin:auto;
+		text-align:center;
+		width:100%;
+	}
+
+	.text-block{
+		text-align: center;
+		padding: 50px;
+
+		h1{
+			font-size: 35px;
+		}
+		p{
+			font-size: 18px;
+		}
+
+		.link{
+			color:black;
+		}
+	}
+}
+
+
+.white-section{
+	background: white;
+
+	.text-block{
+		h1{
+			color: black
+		}
+
+		p{
+			color: black;
+			max-width: 850px;
+			margin: auto;
+		}
+	}
+}
+
+
+.center{
+	text-align:center;
+	margin:auto;
+	max-width: 1000px;
+}
+.row{
+	width: 100%;
+	display: inline-block;
+
+}

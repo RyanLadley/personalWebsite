@@ -1,0 +1,108 @@
+﻿@mixin transition-time($time) {
+    -webkit-transition: all $time;
+    transition: all $time;
+}
+
+@mixin transition-time-easein($time) {
+    -webkit-transition: all $time ease-in;
+    transition: all $time ease-in;
+}
+
+@mixin transition-dimensions( $widthTime, $heightTime) {
+    -webkit-transition: width $widthTime, height $heightTime;
+    transition: width $widthTime, height $heightTime;
+}
+
+@mixin circle-border($radius) {
+    -webkit-border-top-left-radius: $radius;
+    -webkit-border-top-right-radius: $radius;
+    -webkit-border-bottom-right-radius: $radius;
+    -webkit-border-bottom-left-radius: $radius;
+    //
+    -moz-border-radius-topleft: $radius;
+    -moz-border-radius-topright: $radius;
+    -moz-border-radius-bottomright: $radius;
+    -moz-border-radius-bottomleft: $radius;
+    //
+    border-top-right-radius: $radius;
+    border-bottom-right-radius: $radius;
+    border-bottom-left-radius: $radius;
+    border-bottom-left-radius: $radius;
+}
+
+@mixin box-shadow($horizontal, $vertical, $blur, $color) {
+    -moz-box-shadow: $horizontal $vertical $blur $color;
+    -webkit-box-shadow: $horizontal $vertical $blur $color;
+    box-shadow: $horizontal $vertical $blur$color;
+}
+@mixin box-shadow-inset($horizontal, $vertical, $blur, $color) {
+    -moz-box-shadow: inset $horizontal $vertical $blur $color;
+    -webkit-box-shadow: inset $horizontal $vertical $blur $color;
+    box-shadow: inset $horizontal $vertical $blur $color;
+}
+
+@mixin horizontal-gradiant($left-color, $right-color) {
+    background: $left-color; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left, $left-color, $right-color); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, $left-color, $right-color); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, $left-color, $right-color); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, $left-color, $right-color); /* Standard syntax */
+}
+
+@mixin horizontal-image-gradiant($left-color, $right-color, $url) {
+    background: $left-color;
+    background: -webkit-linear-gradient(left, $left-color 55%, $right-color), url($url) center right no-repeat;
+    background: -o-linear-gradient(right, $left-color 55%, $right-color), url($url) center right no-repeat;
+    background: -moz-linear-gradient(right, $left-color 55%, $right-color), url($url) center right no-repeat;
+    background: linear-gradient(to right, $left-color 55%, $right-color), url($url) center right no-repeat;
+}
+
+@mixin vertical-align($position: relative) {
+    position: $position;
+    top: 50%;
+    display: block;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+@mixin text-border($color) {
+    text-shadow: -1px -1px 0 $color, 1px -1px 0 $color, -1px 1px 0 $color, 1px 1px 0 $color;
+}
+
+@mixin transform($transforms) {
+    -moz-transform: $transforms;
+    -o-transform: $transforms;
+    -ms-transform: $transforms;
+    -webkit-transform: $transforms;
+    transform: $transforms;
+}
+
+@mixin fadeIn-frames(){
+    @-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+    @-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+    @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+}
+
+@mixin fade-in($duration){
+    @include fadeIn-frames();
+    opacity:0;
+    -webkit-animation:fadeIn ease-in 1;
+    -moz-animation:fadeIn ease-in 1;
+    animation:fadeIn ease-in 1;
+
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+
+    -webkit-animation-duration: $duration;
+    -moz-animation-duration: $duration;
+    animation-duration: $duration;
+}
+
+
+@mixin animation-delay($delay){
+    -webkit-animation-delay:$delay;
+    -moz-animation-delay: $delay;
+    animation-delay: $delay;
+}

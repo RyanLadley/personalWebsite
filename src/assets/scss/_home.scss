@@ -1,0 +1,202 @@
+.main-background{
+	background: linear-gradient(
+	      rgba(114, 110, 117, 0.6), 
+	      rgba(48, 46, 58, 0.45)
+	    ), 
+	    url('/assets/images/mountains.jpg');
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width:100%;
+    height: 100%;
+    display: inline-block;
+    position: fixed;
+    z-index: -1;
+}
+
+
+.title-block{
+	text-align: center;
+	padding-top: 300px;
+	height: 100%;
+	margin-bottom:130px;
+	box-sizing: border-box;
+}
+
+.sub-title-block{
+	margin: auto;
+	display: inline-block;
+}
+
+.title{
+	color: white;
+	text-shadow: 3px 3px black;
+	font-size: 100px;
+	width: 100%;
+	margin: 0;
+}
+
+.sub-title{
+	color: white;
+	text-shadow: 2px 2px black;
+	font-size: 30px;
+	margin: 0 25px 0 0;
+	float: left;
+    border-bottom: 3px solid transparent; 
+}
+
+
+.denver-section{
+	background: linear-gradient(
+	      rgba(22, 45, 68, 0.85), 
+	      rgba(22, 45, 68, 0.85)
+	    ), 
+	    url('/assets/images/denver.jpg');
+	background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    .text-block{
+		h1{
+			color: white
+		}
+
+		p{
+			color: white;
+			width: 850px;
+			margin: auto;
+		}
+	}
+	.block-container{
+		max-width:930px;
+	}
+
+	.link{
+		display:inline-block;
+		width: 100%;
+		text-align: center;
+
+		a{
+			color:white;
+			padding:10px;
+			text-decoration: none;
+			border-bottom: 3px solid white;
+			display:inline-block;
+		}
+	}
+
+}
+
+
+.profile-picture-wrapper{
+	display:block;
+	position:relative;
+	margin: auto;
+	background:white;
+	height: 200px;    
+
+}
+
+.profile-picture-lg{
+    width: 350px;
+    height: 350px;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    border: solid 7px white;
+    margin: auto;
+    background-image: url("/assets/images/profile.jpg");
+    background-position: center;
+    background-size: auto 350px;
+    position:absolute;
+    left: 50%;
+	transform: translateX(-50%);
+    top:-130px;
+    box-shadow: 2px 0px 5px grey,  -2px 0px 5px grey;
+}
+
+.detail-block{
+	color:white;
+	width: 250px;
+	margin: 0 30px;
+	text-align: center;
+	float:left;
+	box-sizing: border-box;
+	height: 365px;
+	position:relative;
+
+	i{
+		font-size: 45px;
+		margin-bottom:20px;
+	}
+	h4{
+		font-size: 30px;
+		margin:0;
+	}
+	p{
+		font-size: 18px;
+	}
+
+	.example-link{
+			
+		position:absolute;
+		bottom: 0;
+		display:inline-block;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 50px;
+		left: 0;
+		right: 0;
+
+		a{
+			color:white;
+			padding:10px;
+			text-decoration: none;
+			border: 1px solid white;
+			margin: 1px;
+			display:inline-block;			
+		}
+	}
+}
+.protfolio-item{
+	text-align: left;
+	margin: auto;
+	display:inline-block;
+	margin-bottom: 40px;
+	width: 100%;
+
+	.image{
+		background-color: #edeeef;
+		float:left;
+		border-radius: 20px;
+		overflow:hidden;
+		margin-right: 30px;
+		box-shadow:2px 2px 2px grey;
+
+		img{
+			width:280px;
+			max-height:240px;
+			height: auto;
+		}
+	}
+
+	.protfolio-block{
+		float:left;
+	}
+
+	.protfolio-body, .protfolio-title{
+		margin: 0 0 15px 0;
+		max-width: 650px;
+		h2,h3{
+			margin: 0;
+		}
+
+		h2{
+			color: #00909c;
+		}
+
+		h3{
+			color: #6fab6b;
+		}
+	}
+}

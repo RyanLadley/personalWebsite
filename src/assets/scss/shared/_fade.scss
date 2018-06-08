@@ -1,0 +1,27 @@
+
+.fade-in{
+	@include fade-in(1s)
+}
+
+.fade-in-1{
+	@include animation-delay(1s)
+}
+
+.fade-in-2{
+	@include animation-delay(2s)
+}
+.fade-in-3{
+	@include animation-delay(3s)
+}
+.fade-in-4{
+	@include animation-delay(4s)
+}
+
+.border-bottom-delay{
+	border-bottom: 3px solid white !important;
+	-webkit-transition: border 3s ease;
+     -moz-transition: border 3s ease;
+       -o-transition: border 3s ease;
+      -ms-transition: border 3s ease;
+          transition: border 3s ease;    
+}

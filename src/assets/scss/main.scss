@@ -1,0 +1,34 @@
+﻿@import "shared/mixins";
+@import "shared/fade";
+@import "shared/page";
+@import "home";
+@import "values";
+@import "contact";
+
+html{
+
+    width: 100%;
+    height:100%;  
+}
+body {
+	h1, h2, h3,h4 {
+        font-weight: 100;
+    }
+
+    width: 100%;
+    height:100%;
+    display: inline-block;
+    font-family: 'Raleway', sans-serif;
+    padding: 0;
+    margin: 0;
+
+    .content{
+        width: 100%;
+        height:100%;
+    }
+
+}
+
+[hidden] {
+    display: none !important;
+}

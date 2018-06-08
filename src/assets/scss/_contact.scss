@@ -1,0 +1,37 @@
+.contact-section{
+	background: white;//#a2a2a2;
+	text-align:center;
+	.text-block{
+		color:black;
+	}
+
+	.fa-5x{
+		font-size: 200px;
+		margin: 20px;
+		text-shadow: 2px 2px 2px grey;
+	}
+
+	.fa-linkedin-square{
+		color:#0073b1;
+	}
+
+	.fa-github{
+		color:#24292e;
+	}
+	img{
+		width: 150px;
+		height: 150px;
+		margin: 20px;
+	}
+
+	.email{
+		width: 100%;
+		font-size: 22px;
+		margin-bottom: 50px;
+		color: black;
+		text-decoration: none;
+		i{
+			margin-right: 10px;
+		}
+	}
+}

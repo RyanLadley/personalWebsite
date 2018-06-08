@@ -1,0 +1,5 @@
+export * from "./app-root/app-root.component"
+export * from "./home/home.component"
+export * from "./loading/loading.component"
+export * from "./values/values.component"
+export * from "./contact/contact.component"
